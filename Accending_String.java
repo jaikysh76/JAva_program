@@ -1,0 +1,14 @@
+package _pasted_code_;
+import java.io.*;
+
+public class Accending_String 
+{
+	public static void main(String args[]) throws IOException
+	{
+		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter a name: ");
+		String name =br.readLine();
+		System.out.println("you entered: " +name);
+	}
+
+}
