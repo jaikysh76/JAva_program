@@ -1,24 +1,30 @@
-package Java;
+package Star;
 
-public class Program1
+import java.util.Scanner;
+
+public class Program1 
 {
-	private double num1,num2;
-	Program1(double x, double y)
-	{
-		num1=x;
-		num2=y;
-	}
-	void sum()
-	{
-		double res=num1+num2;
-		System.out.println("sum"+res);
-
-	}
-	public static void main(String args[]) 
-	{
-		Program1 br=new Program1(10,22.5) ;
-		br.sum();
-		
-	}
+   public static void PrintStar(int n)
+   {
+	   int i,j;
+	   for(i=0;i<n;i++)
+	   {
+		   for(j=0;j<=i;j++) 
+		   {
+			 System.out.print("*");
+		   } 
+		   System.out.println();
+	   }
+	 }
+   public static void main(String args[])
+   {
+	  // int n=5;
+	  Scanner sc =new Scanner(System.in);            
+	      
+	  int n=sc.nextInt();
+	   
+	   System.out.println("Enter the Star no "+n);
+	  PrintStar(n);
+   }
+   
 }
-

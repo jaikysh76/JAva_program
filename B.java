@@ -1,14 +1,15 @@
-package Inheritance;
+package Single_inheritance;
 
-public class B extends A
+public class B extends  A
 {
-	 int bonus =10000;
-	 public static void main(String args [])
-	 {
-		 B s =new B();
-		 System.out.println("Salary " +s.salary);
-		 System.out.println("Bonus salary" +s.bonus);
-		 
-	 }
- }
-
+   void methodB()
+   {
+	   System.out.println("this is child class");
+   }
+   public static void main(String args[])
+   {
+	   B obj=new B();
+	   obj.methodA();
+	   obj.methodB();
+   }
+}

@@ -1,6 +1,11 @@
-package Inheritance;
+package Single_inheritance;
 
 public class A 
-{
-	float salary=60000; 
+{ 
+	void methodA() 
+	{
+	
+		System.out.println("the parent class");
+	}
 }
+
